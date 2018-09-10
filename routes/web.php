@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/{any}', 'Front\PlannerController@index')->where('any','.*');
+#Route::get('/{any}', 'Front\PlannerController@demo')->where('any','.*');
+Route::get('/', 'Front\PlannerController@index');
+Route::get('/{any}', 'Front\PlannerController@demo')->where('any','.*');

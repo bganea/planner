@@ -7,6 +7,9 @@ use App\Http\Controllers\Controller;
 
 class PlannerController extends Controller {
 	public function index(){
-		return view('planner');
+        return view('planner');
+    }
+    public function demo(){
+		return view('demo');
 	}
 }
